@@ -1,0 +1,49 @@
+# Copied from: 
+# https://github.com/github/gitignore/blob/master/Rails.gitignore
+# http://www.sujee.net/tech/articles/gitignore/
+# http://ruby.railstutorial.org/book/ruby-on-rails-tutorial#code-gitignore
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+#config/initializers/secret_token.rb # Heroku is looking for this for some reason
+config/secrets.yml
+
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+## generic files to ignore
+*~
+*.DS_Store
+*.swp
+*.out
+
+# Ignore other unneeded files.
+database.yml
+doc/
+.project
+.idea
+.secret
+
+# Ignore application configuration
+/config/application.yml
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json

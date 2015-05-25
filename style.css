@@ -35,8 +35,14 @@ g[transform='translate(600,0)'] > text {
   visibility: hidden;
 }
 .big-wrapper {
-  width: 75%;
+  width: 90%; /* for smaller screens, this gets overridden below */
   margin: 0px auto; 
+}
+/* http://www.zingdesign.com/responsive-website-design-cheatsheet1/ */
+@media (min-width: 960px) { 
+  .big-wrapper {
+    width: 75%;
+  }
 }
 .graph-title {
   text-align: center;
@@ -70,3 +76,4 @@ div.tooltip {
   /* border-radius: 8px; */
   pointer-events: none;         
 }
+

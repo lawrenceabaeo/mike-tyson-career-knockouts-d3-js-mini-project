@@ -35,13 +35,12 @@ g[transform='translate(600,0)'] > text {
   visibility: hidden;
 }
 .big-wrapper {
-  width: 90%; /* for smaller screens, this gets overridden below */
+  width: 75%;
   margin: 0px auto; 
 }
-/* http://www.zingdesign.com/responsive-website-design-cheatsheet1/ */
-@media (min-width: 960px) { 
+@media (max-width: 980px) { /* iphone defaults to 980 if meta viewport is not used */
   .big-wrapper {
-    width: 75%;
+    width: 90%; /* for smaller screens, this gets overridden below */
   }
 }
 .graph-title {

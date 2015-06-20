@@ -75,4 +75,8 @@ div.tooltip {
   /* border-radius: 8px; */
   pointer-events: none;         
 }
-
+#viz-wrapper {
+  height: 643px; /* manually stating pixels here so that
+  the screen doesn't do a weird jump from before loading 
+  the svg chart to after */
+}

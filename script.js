@@ -58,7 +58,7 @@ d3.csv('./tyson_full_ko_wins.csv', function(data) {
       .attr("class", "bar")
       .attr("y", function(d) { return yScale(d.FIGHT_DATE) })
       .attr("x", 0)
-      .attr("width", function(d) { return xScale(totalTime(d.ROUND, d.ROUND_TIME)) })
+      .attr("width", 0)
       .attr("height", yScale.rangeBand())
       .on("mouseenter", function(d){
         bar = d3.select(this);
@@ -76,7 +76,11 @@ d3.csv('./tyson_full_ko_wins.csv', function(data) {
         div.transition()        
         .duration(500)      
         .style("opacity", 0); 
-      });
+      })
+      .transition()
+        .delay(300)
+        .duration(750)
+        .attr("width", function(d) { return xScale(totalTime(d.ROUND, d.ROUND_TIME)) });
 
 });
  
